@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">W4_P5</string>
+
+    <string name="hint_button_text">PAY FOR HINT</string>
+    <string name="choice_label">CHOOSE A LETTER</string>
+    <string name="ng_label">START NEW GAME</string>
+
+    <string-array name="words">
+        <item>donut</item>
+        <item>apple</item>
+        <item>car</item>
+        <item>cheese</item>
+        <item>mobile</item>
+        <item>rock</item>
+        <item>tiger</item>
+        <item>laptop</item>
+    </string-array>
+
+    <string-array name="hints">
+        <item>round pastry</item>
+        <item>orchards</item>
+        <item>4 wheels</item>
+        <item>mouse trap</item>
+        <item>phone</item>
+        <item>pebble</item>
+        <item>big cat</item>
+        <item>computer</item>
+    </string-array>
+
+</resources>

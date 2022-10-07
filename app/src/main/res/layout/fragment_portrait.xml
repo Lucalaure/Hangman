@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".PortraitFragment">
+
+    <TextView
+        android:id="@+id/word_guess2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/choice_grid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ng_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ng_label"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/hang_image"
+        app:layout_constraintEnd_toEndOf="@+id/hang_image"
+        app:layout_constraintStart_toStartOf="@+id/hang_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/hang_image"
+        android:layout_width="235dp"
+        android:layout_height="245dp"
+        android:contentDescription="mr hangman"
+        android:src="@drawable/start"
+        app:layout_constraintBottom_toTopOf="@+id/word_guess2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <GridLayout
+        android:id="@+id/choice_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/A"
+            style="@style/choice_letter"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="clickMe"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/B"
+            style="@style/choice_letter"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="clickMe"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/C"
+            style="@style/choice_letter"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="clickMe"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/D"
+            style="@style/choice_letter"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:onClick="clickMe"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/E"
+            style="@style/choice_letter"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:onClick="clickMe"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/F"
+            style="@style/choice_letter"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:onClick="clickMe"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/G"
+            style="@style/choice_letter"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:onClick="clickMe"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/H"
+            style="@style/choice_letter"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="clickMe"
+            android:text="H" />
+
+        <Button
+            android:id="@+id/I"
+            style="@style/choice_letter"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="clickMe"
+            android:text="I" />
+
+        <Button
+            android:id="@+id/J"
+            style="@style/choice_letter"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="clickMe"
+            android:text="J" />
+
+        <Button
+            android:id="@+id/K"
+            style="@style/choice_letter"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:onClick="clickMe"
+            android:text="K" />
+
+        <Button
+            android:id="@+id/L"
+            style="@style/choice_letter"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:onClick="clickMe"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/M"
+            style="@style/choice_letter"
+            android:layout_row="1"
+            android:layout_column="5"
+            android:onClick="clickMe"
+            android:text="M" />
+
+        <Button
+            android:id="@+id/N"
+            style="@style/choice_letter"
+            android:layout_row="1"
+            android:layout_column="6"
+            android:onClick="clickMe"
+            android:text="N" />
+
+        <Button
+            android:id="@+id/O"
+            style="@style/choice_letter"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="clickMe"
+            android:text="O" />
+
+        <Button
+            android:id="@+id/P"
+            style="@style/choice_letter"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:onClick="clickMe"
+            android:text="P" />
+
+        <Button
+            android:id="@+id/Q"
+            style="@style/choice_letter"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="clickMe"
+            android:text="Q" />
+
+        <Button
+            android:id="@+id/R"
+            style="@style/choice_letter"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:onClick="clickMe"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/S"
+            style="@style/choice_letter"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:onClick="clickMe"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/T"
+            style="@style/choice_letter"
+            android:layout_row="2"
+            android:layout_column="5"
+            android:onClick="clickMe"
+            android:text="T" />
+
+        <Button
+            android:id="@+id/U"
+            style="@style/choice_letter"
+            android:layout_row="2"
+            android:layout_column="6"
+            android:onClick="clickMe"
+            android:text="U" />
+
+        <Button
+            android:id="@+id/V"
+            style="@style/choice_letter"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:onClick="clickMe"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/W"
+            style="@style/choice_letter"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:onClick="clickMe"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/X"
+            style="@style/choice_letter"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:onClick="clickMe"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/Y"
+            style="@style/choice_letter"
+            android:layout_row="3"
+            android:layout_column="5"
+            android:onClick="clickMe"
+            android:text="Y" />
+
+        <Button
+            android:id="@+id/Z"
+            style="@style/choice_letter"
+            android:layout_row="3"
+            android:layout_column="6"
+            android:onClick="clickMe"
+            android:text="Z" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
